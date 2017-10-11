@@ -17,6 +17,7 @@ Plug 'noahfrederick/vim-noctu'
 Plug 'tssm/fairyfloss.vim'
 Plug 'zanglg/nova.vim'
 Plug 'ajmwagar/vim-deus'
+Plug 'YorickPeterse/happy_hacking.vim'
 
 call plug#end()
 
@@ -29,7 +30,8 @@ set number                                                                      
 set relativenumber                                                              "Show numbers relative to current line
 set background=dark
 "colorscheme OceanicNext
-colorscheme hemisu
+"colorscheme hemisu
+colorscheme happy_hacking
 
 
 " Airline                                                                                                               
