@@ -18,6 +18,7 @@ Plug 'tssm/fairyfloss.vim'
 Plug 'zanglg/nova.vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'YorickPeterse/happy_hacking.vim'
+Plug 'gerardbm/vim-atomic'
 
 call plug#end()
 
@@ -29,8 +30,7 @@ syntax enable
 set number                                                                      "Line numbers
 set relativenumber                                                              "Show numbers relative to current line
 set background=dark
-"colorscheme OceanicNext
-"colorscheme hemisu
+"colorscheme: OceanicNext, hemisu, happy_hacking
 colorscheme happy_hacking
 
 
