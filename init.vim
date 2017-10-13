@@ -12,6 +12,7 @@ Plug 'timothycrosley/isort'
 Plug 'vim-python/python-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'Rykka/riv.vim'
 
 " THEMES & COLORS
 Plug 'flazz/vim-colorschemes'
