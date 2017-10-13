@@ -2,11 +2,16 @@
 
 call plug#begin()
 " PLUGINS
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 Plug 'timothycrosley/isort'
 Plug 'vim-python/python-syntax'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " THEMES & COLORS
 Plug 'flazz/vim-colorschemes'
@@ -23,6 +28,8 @@ Plug 'zanglg/nova.vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'YorickPeterse/happy_hacking.vim'
 Plug 'gerardbm/vim-atomic'
+Plug 'MaxSt/FlatColor'
+Plug 'iCyMind/NeoSolarized'
 
 call plug#end()
 
