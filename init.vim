@@ -35,7 +35,7 @@ set number                                                                      
 set relativenumber                                                              "Show numbers relative to current line
 set background=dark
 "colorscheme: OceanicNext, hemisu, happy_hacking
-colorscheme happy_hacking
+colorscheme Monokai
 
 
 " Airline                                                                                                               
