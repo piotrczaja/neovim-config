@@ -59,7 +59,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " vim-python/python-syntax
 let g:python_highlight_all = 1
-
+let g:deoplete#enable_at_startup = 1
 
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
