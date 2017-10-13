@@ -4,8 +4,12 @@ call plug#begin()
 " PLUGINS
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'timothycrosley/isort'
+Plug 'vim-python/python-syntax'
 
 " THEMES & COLORS
+Plug 'flazz/vim-colorschemes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jnurmine/Zenburn'
@@ -44,4 +48,9 @@ let g:airline_theme = 'simple'
 let g:airline#extensions#syntastic#enabled = 1                                                                          
 let g:airline#extensions#branch#enabled = 1                                                                             
 let g:airline#extensions#tabline#enabled = 1
+
+" vim-python/python-syntax
+let g:python_highlight_all = 1
+
+
 
