@@ -1,7 +1,9 @@
 
 
 call plug#begin()
-" PLUGINS
+
+" ##############################################
+" INSTALL PLUGINS
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
@@ -17,7 +19,8 @@ Plug 'Rykka/riv.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'mbbill/undotree'
 
-" THEMES & COLORS
+" ##############################################
+" INSTALL THEMES & COLORS
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
@@ -39,44 +42,129 @@ Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
+" ##############################################
+" GLOBAL SETTINGS
+
 if (has("termguicolors"))
  set termguicolors
 endif
 
 syntax enable
-set number                                                                      "Line numbers
+set encoding=utf-8
 :set mouse=a
-set relativenumber                                                              "Show numbers relative to current line
+filetype on                                     " enables filetype detection
+filetype plugin on                              " enables filetype specific plugins
+filetype plugin indent on                       " Automatically detect file types
+set history=1000                                " pojemnosc historii
+set undolevels=1000                             " 1000 undos
+set backup                                      " tworz kopie zapsowe
+set autoread                                    " sledz zmiany pliku
+set title                                       " show title in console title bar
+set autowrite                                   " auto saves changes when quitting and swiching buffer
+set showcmd                                     " display incomplete commands
+set backspace=indent,eol,start  		" more powerful backspacing
+set incsearch                                   " szukanie podczas wprowadzania
+set ignorecase                                  " ignore case when searching
+let mapleader=','                               " defioniwanie leader key
+set wrap
+set linebreak
+set tabstop=4                    "
+set softtabstop=4                "
+set shiftwidth=4                 "
+set expandtab                    " zamieniaj tab na spacje
+set smarttab                     "
+set autoindent                   " automatyczne wciecia
+set smartindent                  " inteligentne wciecia
+
+" Files .PY
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+
+" Files: .JS, .CSS, .HTML
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+
+
+" ##############################################
+" PATHS
+set backupdir=~/.local/vim/backups              " katalog kopii zapsawych
+set directory=~/.local/vim/tmp                  " katalog plikow tymczasowych
+set viewdir=~/.local/vim/views
+
+" ##############################################
+" THEME & VIEW SETTINGS
+
 set background=dark
 "colorscheme: OceanicNext, hemisu, happy_hacking
 colorscheme Monokai
+set number                                      "Line numbers
+set relativenumber                              "Show numbers relative to current line
+set numberwidth=4                               " szerokosc kolumny nr linii
+set cmdheight=1                                 " lines for command window
+set showmatch                                   " pokazywanie dopelnien np. nawiasy
+set matchtime=2                                 " Be breif when displaying the match
+set display+=lastline                           " pokaz ostani paragraf nawet jesli nie miesci sie na stronie
+set ruler                                       " kazde okno pokazuje pozycje kursora
+                                                " w linii statusu
+set scrolloff=3                                 " keep 3 lines when scrolling
+set hlsearch                                    " highlight searches
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+let python_highlight_all=1
+au FileType helpfile set nonumber               " no line numbers when viewing help
+set foldenable                            " Enable folding
+set foldlevel=99
+set foldlevelstart=3
+set foldmethod=indent                     " Fold: syntax,manual,marker,expression,indent
+nnoremap <space> za                       " Enable folding with the spacebar
 
-
-" Airline                                                                                                               
-let g:airline_powerline_fonts = 1                                                                                       
-if !exists('g:airline_symbols')                                                                                         
-  let g:airline_symbols = {}                                                                                            
-endif                                                                                                                   
+" Airline
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+   let g:airline_symbols = {}
+endif
 let g:airline_symbols.space = "\ua0"
 let g:airline_theme = 'simple'
-let g:airline#extensions#syntastic#enabled = 1                                                                          
-let g:airline#extensions#branch#enabled = 1                                                                             
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " vim-python/python-syntax
 let g:python_highlight_all = 1
 let g:deoplete#enable_at_startup = 1
 
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
+
+" ##############################################
+" PLUGIN SETTINGS
+
+" NERDTree
+let g:NERDTreeWinSize = 40
+let g:NERDTreeWinPos = "left"
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeIndicatorMapCustom = { "Modified"  : "✹", "Staged"    : "✚", "Untracked" : "✭", "Renamed"   : "➜", "Unmerged"  : "═", "Deleted"   : "✖", "Dirty"     : "✗", "Clean"     : "✔︎", 'Ignored'   : '☒', "Unknown"   : "?" }
+
+
+" ##############################################
+" FUNCTION KEYS
+" F2 - line numbers
+map <F2> :set number!<Bar>set number?<CR>
+imap <F2> :set nu!<CR>
+nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+" F3 - text wrapping
+nnoremap <silent> <F3> :let &wrap = !&wrap<CR>
+" F4 - text search
+noremap <F4> :set hlsearch! hlsearch?<CR>
+" F9 - NERDTree
+map <F9> :NERDTreeToggle<CR>
 
