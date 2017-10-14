@@ -92,8 +92,12 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
 
+" SPELL CHECKING
+" For download of dictionaries comment the setting and type:
+" :setlocal spell spelllang=en_us [pl,de]
+set spelllang=pl,de,en
+set spellfile=~/.config/nvim/spell/spellfile.add
 
-" ##############################################
 " PATHS
 set backupdir=~/.local/vim/backups              " katalog kopii zapsawych
 set directory=~/.local/vim/tmp                  " katalog plikow tymczasowych
@@ -165,6 +169,9 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 nnoremap <silent> <F3> :let &wrap = !&wrap<CR>
 " F4 - text search
 noremap <F4> :set hlsearch! hlsearch?<CR>
-" F9 - NERDTree
-map <F9> :NERDTreeToggle<CR>
+" F5 - spell checking
+map <F5> :setlocal spell spelllang=pl,de,en
+map <F5> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
+" F6 - NERDTree
+map <F6> :NERDTreeToggle<CR>
 
