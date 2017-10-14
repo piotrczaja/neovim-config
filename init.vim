@@ -7,17 +7,20 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
+Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 Plug 'timothycrosley/isort'
 Plug 'vim-python/python-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'Rykka/riv.vim'
+Plug 'tmhedberg/SimpylFold'
 
 " THEMES & COLORS
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
 Plug 'altercation/vim-colors-solarized'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'jnurmine/Zenburn'
 Plug 'Pychimp/vim-luna'
 Plug 'joshdick/onedark.vim'
@@ -40,6 +43,7 @@ endif
 
 syntax enable
 set number                                                                      "Line numbers
+:set mouse=a
 set relativenumber                                                              "Show numbers relative to current line
 set background=dark
 "colorscheme: OceanicNext, hemisu, happy_hacking
