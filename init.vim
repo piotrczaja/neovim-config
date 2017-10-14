@@ -15,6 +15,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'Rykka/riv.vim'
 Plug 'tmhedberg/SimpylFold'
+Plug 'mbbill/undotree'
 
 " THEMES & COLORS
 Plug 'vim-airline/vim-airline'
