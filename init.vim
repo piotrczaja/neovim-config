@@ -18,6 +18,11 @@ Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'Rykka/riv.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'mbbill/undotree'
+Plug 'othree/html5.vim'
+Plug 'tpope/vim-git'
+Plug 'pangloss/vim-javascript'
+Plug 'JuliaEditorSupport/julia-vim'
+
 
 " ##############################################
 " INSTALL THEMES & COLORS
