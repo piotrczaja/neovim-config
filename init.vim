@@ -34,6 +34,7 @@ Plug 'YorickPeterse/happy_hacking.vim'
 Plug 'gerardbm/vim-atomic'
 Plug 'MaxSt/FlatColor'
 Plug 'iCyMind/NeoSolarized'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
