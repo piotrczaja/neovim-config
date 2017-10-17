@@ -22,6 +22,8 @@ Plug 'othree/html5.vim'
 Plug 'tpope/vim-git'
 Plug 'pangloss/vim-javascript'
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'tpope/vim-surround'
+Plug 'tomtom/tcomment_vim'
 
 
 " ##############################################
