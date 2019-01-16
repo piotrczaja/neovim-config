@@ -8,8 +8,6 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 Plug 'timothycrosley/isort'
 Plug 'vim-python/python-syntax'
 Plug 'tpope/vim-fugitive'
@@ -150,7 +148,6 @@ let g:airline#extensions#tabline#enabled = 1
 
 " vim-python/python-syntax
 let g:python_highlight_all = 1
-let g:deoplete#enable_at_startup = 1
 
 
 " ##############################################
