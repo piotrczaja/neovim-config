@@ -4,26 +4,34 @@ call plug#begin()
 
 " ##############################################
 " INSTALL PLUGINS
+
+" Nerdtree
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle' } " file list
 Plug 'Xuyuanp/nerdtree-git-plugin'
-
-Plug 'tpope/vim-git'
-Plug 'tomtom/tcomment_vim'
-Plug 'tpope/vim-fugitive'
-
-Plug 'majutsushi/tagbar'  " show tags in a bar (functions etc) for easy browsing
-Plug 'davidhalter/jedi-vim'   " jedi for python
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'  "to highlight files in nerdtree
-Plug 'Vimjas/vim-python-pep8-indent'  "better indenting for python
-Plug 'kien/ctrlp.vim'  " fuzzy search files
-Plug 'tweekmonster/impsort.vim'  " color and sort imports
-Plug 'wsdjeg/FlyGrep.vim'  " awesome grep on the fly
-Plug 'w0rp/ale'  " python linters
+
+" Git
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'  " show git changes to files in gutter
+
+" Python coding
+Plug 'davidhalter/jedi-vim'   " jedi for python
+Plug 'Vimjas/vim-python-pep8-indent'  "better indenting for python
+Plug 'w0rp/ale'  " python linters
+Plug 'tweekmonster/impsort.vim'  " color and sort imports
+
+" Vim IDE
+Plug 'majutsushi/tagbar'  " show tags in a bar (functions etc) for easy browsing
+Plug 'kien/ctrlp.vim'  " fuzzy search files
+Plug 'wsdjeg/FlyGrep.vim'  " awesome grep on the fly
+Plug 'tomtom/tcomment_vim'
+
+" Autocompletion
 Plug 'roxma/nvim-yarp'  " dependency of ncm2
 Plug 'ncm2/ncm2'  " awesome autocomplete plugin
 "Plug 'HansPinckaers/ncm2-jedi'  " fast python completion (use ncm2 if you want type info or snippet support)
-Plug 'ncm2/ncm2-jedi'
+Plug 'ncm2/ncm2-jedi' " python completion
 Plug 'ncm2/ncm2-bufword'  " buffer keyword completion
 Plug 'ncm2/ncm2-path'  " filepath completion
 Plug 'ncm2/ncm2-markdown-subscope' " fenced code block detection in markdown files for ncm2
