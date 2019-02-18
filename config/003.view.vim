@@ -3,8 +3,8 @@
 " THEME & VIEW SETTINGS
 
 set background=dark
-"colorscheme: OceanicNext, hemisu, happy_hacking
-colorscheme Monokai
+"colorscheme: challenger_deep, lucius, onedark, abstract, bold-contrast, snow
+colorscheme darktooth
 set number                                      "Line numbers
 set relativenumber                              "Show numbers relative to current line
 set numberwidth=4                               " szerokosc kolumny nr linii
@@ -25,5 +25,9 @@ set foldlevel=99
 set foldlevelstart=3
 set foldmethod=indent                     " Fold: syntax,manual,marker,expression,indent
 nnoremap <space> za                       " Enable folding with the spacebar
+
+if has('nvim') || has('termguicolors')
+  set termguicolors
+endif
 
 

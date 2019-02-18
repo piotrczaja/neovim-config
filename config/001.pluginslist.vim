@@ -20,6 +20,7 @@ Plug 'davidhalter/jedi-vim'   " jedi for python
 Plug 'Vimjas/vim-python-pep8-indent'  "better indenting for python
 Plug 'w0rp/ale'  " python linters
 Plug 'tweekmonster/impsort.vim'  " color and sort imports
+Plug 'vim-python/python-syntax' " Python syntax highlighting for Vim
 
 " Vim IDE
 Plug 'majutsushi/tagbar'  " show tags in a bar (functions etc) for easy browsing
@@ -44,22 +45,13 @@ Plug 'ncm2/ncm2-html-subscope' " Detect javascript/css subscope from html code
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
-Plug 'altercation/vim-colors-solarized'
-Plug 'jnurmine/Zenburn'
-Plug 'Pychimp/vim-luna'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'jonathanfilip/vim-lucius', { 'as': 'lucius' }
 Plug 'joshdick/onedark.vim'
-Plug 'mhartington/oceanic-next'
-Plug 'noahfrederick/vim-hemisu'
-Plug 'noahfrederick/vim-noctu'
-Plug 'tssm/fairyfloss.vim'
-Plug 'zanglg/nova.vim'
-Plug 'ajmwagar/vim-deus'
-Plug 'YorickPeterse/happy_hacking.vim'
-Plug 'gerardbm/vim-atomic'
-Plug 'MaxSt/FlatColor'
-Plug 'iCyMind/NeoSolarized'
-Plug 'ayu-theme/ayu-vim'
-Plug 'jonathanfilip/vim-lucius'  " nice white colortheme
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'rainglow/vim'
+Plug 'nightsense/snow'
+Plug 'mswift42/vim-themes'
 
 call plug#end()
 
