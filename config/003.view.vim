@@ -30,4 +30,7 @@ if has('nvim') || has('termguicolors')
   set termguicolors
 endif
 
+if (has("termguicolors"))
+ set termguicolors
+endif
 
