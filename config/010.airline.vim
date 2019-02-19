@@ -6,8 +6,8 @@ if !exists('g:airline_symbols')
    let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
-" themes: simple, atomic, aurora, base-16
-let g:airline_theme = 'base-16'
+" themes: simple, atomic, aurora, base16
+let g:airline_theme = 'base16_monokai'
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
