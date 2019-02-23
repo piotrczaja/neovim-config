@@ -21,13 +21,14 @@ Plug 'Vimjas/vim-python-pep8-indent'  "better indenting for python
 Plug 'w0rp/ale'  " python linters
 Plug 'tweekmonster/impsort.vim'  " color and sort imports
 Plug 'vim-python/python-syntax' " Python syntax highlighting for Vim
+Plug 'Yggdroot/indentLine' " mark indent lines
+Plug 'ambv/black' " format python code
 
 " Vim IDE
 Plug 'majutsushi/tagbar'  " show tags in a bar (functions etc) for easy browsing
 Plug 'kien/ctrlp.vim'  " fuzzy search files
 Plug 'wsdjeg/FlyGrep.vim'  " awesome grep on the fly
 Plug 'tomtom/tcomment_vim' " mark/unmark comment lines
-Plug 'Yggdroot/indentLine' " mark indent lines
 
 " Autocompletion
 Plug 'roxma/nvim-yarp'  " dependency of ncm2
