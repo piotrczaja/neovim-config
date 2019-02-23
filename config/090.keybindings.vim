@@ -14,7 +14,8 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 " F5 - spell checking
 map <F5> :setlocal spell spelllang=pl,de,en
 map <F5> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
-
+" F6 - IndentLines
+map <F6> :IndentLinesToggle<CR>
 
 
 " ##############################################

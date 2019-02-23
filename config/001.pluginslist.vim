@@ -39,6 +39,7 @@ Plug 'ncm2/ncm2-markdown-subscope' " fenced code block detection in markdown fil
 Plug 'ncm2/ncm2-rst-subscope' " Detect code blocks in reStructuredText document for ncm2
 Plug 'ncm2/ncm2-html-subscope' " Detect javascript/css subscope from html code 
 
+Plug 'Yggdroot/indentLine' " mark indent lines
 
 " ##############################################
 " INSTALL THEMES & COLORS
