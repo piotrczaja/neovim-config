@@ -26,7 +26,8 @@ Plug 'vim-python/python-syntax' " Python syntax highlighting for Vim
 Plug 'majutsushi/tagbar'  " show tags in a bar (functions etc) for easy browsing
 Plug 'kien/ctrlp.vim'  " fuzzy search files
 Plug 'wsdjeg/FlyGrep.vim'  " awesome grep on the fly
-Plug 'tomtom/tcomment_vim'
+Plug 'tomtom/tcomment_vim' " mark/unmark comment lines
+Plug 'Yggdroot/indentLine' " mark indent lines
 
 " Autocompletion
 Plug 'roxma/nvim-yarp'  " dependency of ncm2
@@ -39,7 +40,6 @@ Plug 'ncm2/ncm2-markdown-subscope' " fenced code block detection in markdown fil
 Plug 'ncm2/ncm2-rst-subscope' " Detect code blocks in reStructuredText document for ncm2
 Plug 'ncm2/ncm2-html-subscope' " Detect javascript/css subscope from html code 
 
-Plug 'Yggdroot/indentLine' " mark indent lines
 
 " ##############################################
 " INSTALL THEMES & COLORS
