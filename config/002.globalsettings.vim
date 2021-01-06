@@ -28,9 +28,9 @@ set smartindent                  " inteligentne wciecia
 
 
 " PATHS
-set backupdir=~/.local/vim/backups              " katalog kopii zapsawych
-set directory=~/.local/vim/tmp                  " katalog plikow tymczasowych
-set viewdir=~/.local/vim/views
+set backupdir=~/.local/nvim/backups              " katalog kopii zapsawych
+set directory=~/.local/nvim/tmp                  " katalog plikow tymczasowych
+set viewdir=~/.local/nvim/views
 
 
 
