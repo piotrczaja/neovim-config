@@ -69,6 +69,7 @@ return packer.startup(function(use)
   use { 'folke/tokyonight.nvim' }                -- tokyonight colors
   use { 'lunarvim/darkplus.nvim' }               -- darkplus colors
   use { "lunarvim/onedarker.nvim" }              -- onedarker colors
+  use { "shaeinst/roshnivim-cs" }                -- universal colors
 
   -- Auto completion
 
