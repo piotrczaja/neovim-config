@@ -1,9 +1,11 @@
 
 -- Enable/Disable color themes
 
--- require('colormod.nightfox')
+-- List of configured options:
+
 -- require('colormod.darkplus')
-require('colormod.tokyonight')
+require('colormod.nightfox')
+-- require('colormod.tokyonight')
 
 
 
