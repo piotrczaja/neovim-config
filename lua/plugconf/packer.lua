@@ -54,7 +54,6 @@ return packer.startup(function(use)
   use { 'kyazdani42/nvim-tree.lua' }            -- file tree
   use { 'nvim-lualine/lualine.nvim' }           -- statusline
   use { 'romgrk/barbar.nvim' }                  -- tabline plugin
-  use { 'rcarriga/nvim-notify' }                -- notification manager 
 
   -- Color schemas
   use { 'EdenEast/nightfox.nvim' } 		        -- NightFox colors

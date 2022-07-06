@@ -1,5 +1,5 @@
 
-require('settings.nvim-notify')
+require('settings.configopt')
 require('settings.globals')
 require('settings.nvim-tree')
 require('settings.lualine')
