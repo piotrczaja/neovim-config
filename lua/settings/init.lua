@@ -1,4 +1,5 @@
 
+require('settings.notify')
 require('settings.configopt')
 require('settings.globals')
 require('settings.nvim-tree')

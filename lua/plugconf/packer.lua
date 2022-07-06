@@ -44,29 +44,31 @@ packer.init {
 -- Install your plugins here --
 return packer.startup(function(use)
   -- My plugins here
-  use { 'wbthomason/packer.nvim' }              -- Have packer manage itself
+  use { 'wbthomason/packer.nvim' }               -- Have packer manage itself
 
 -- ############################################################################
 
   -- Dependencies
-  use { 'kyazdani42/nvim-web-devicons' }        -- lualine, file tree ...
-  use { 'nvim-lua/plenary.nvim' }               -- Useful lua functions used by lots of plugins
+  use { 'kyazdani42/nvim-web-devicons' }         -- lualine, file tree ...
+  use { 'nvim-lua/plenary.nvim' }                -- Useful lua functions used by lots of plugins
 
   -- Extensions
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }      -- interface for tree-sitter 
   use { 'nvim-treesitter/nvim-treesitter-refactor' }                -- extension for tree-sitter
-  use { 'stsewd/sphinx.nvim', run = ':UpdateRemotePlugins' }        -- treesitter extension for spihnx
+  use { 'stsewd/sphinx.nvim', run = ':UpdateRemotePlugins' }        -- treesitter extension for sphinx
   use { 'nvim-telescope/telescope.nvim' }                           -- fuzzy finder
 
   -- UI for NeoVim
-  use { 'kyazdani42/nvim-tree.lua' }            -- file tree
-  use { 'nvim-lualine/lualine.nvim' }           -- statusline
-  use { 'romgrk/barbar.nvim' }                  -- tabline plugin
+  use { 'kyazdani42/nvim-tree.lua' }             -- file tree
+  use { 'nvim-lualine/lualine.nvim' }            -- statusline
+  use { 'romgrk/barbar.nvim' }                   -- tabline plugin
+  use { "rcarriga/nvim-notify"  }                -- notify massages
 
   -- Color schemas
-  use { 'EdenEast/nightfox.nvim' } 		        -- NightFox colors
+  use { 'EdenEast/nightfox.nvim' } 		           -- NightFox colors
   use { 'folke/tokyonight.nvim' }                -- tokyonight colors
   use { 'lunarvim/darkplus.nvim' }               -- darkplus colors
+  use { "lunarvim/onedarker.nvim" }              -- onedarker colors
 
   -- Auto completion
 
