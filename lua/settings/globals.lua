@@ -12,7 +12,10 @@ set.smartcase = true
 
 set.splitbelow = true
 set.splitright = true
-set.wrap = false                            	-- display lines as one long line
+set.wrap = true                            	-- display lines as one long line
+-- vim.wo.wrap = true
+-- vim.wo.linebreak = true
+-- vim.wo.list = false -- extra option I set in addition to the ones in your question
 set.scrolloff = 5
 set.fileencoding = 'utf-8'
 set.termguicolors = true
