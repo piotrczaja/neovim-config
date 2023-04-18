@@ -59,9 +59,9 @@ return packer.startup(function(use)
   use { 'nvim-telescope/telescope.nvim' }                           -- fuzzy finder
 
   -- UI for NeoVim
-  use { 'kyazdani42/nvim-tree.lua' }             -- file tree
+  -- use { 'kyazdani42/nvim-tree.lua' }             -- file tree
   use { 'nvim-lualine/lualine.nvim' }            -- statusline
-  use { 'romgrk/barbar.nvim' }                   -- tabline plugin
+  -- use { 'romgrk/barbar.nvim' }                   -- tabline plugin
   use { "rcarriga/nvim-notify"  }                -- notify massages
 
   -- Color schemas
